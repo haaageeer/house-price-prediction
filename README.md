@@ -1,10 +1,10 @@
-# 🏡 House Price Prediction — End-to-End ML Web App
+# House Price Prediction — End-to-End ML Web App
 
 An end-to-end machine learning web application that predicts residential property prices across **51 Indian cities**. Users fill in property details through a modern React UI; the request is processed by a FastAPI backend that runs inference through a trained scikit-learn pipeline and returns an estimated price in Indian Rupees.
 
 ---
 
-## 🗺️ Architecture Overview
+## Architecture Overview
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -40,7 +40,7 @@ An end-to-end machine learning web application that predicts residential propert
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Layer            | Technology                                |
 | ---------------- | ----------------------------------------- |
@@ -53,7 +53,7 @@ An end-to-end machine learning web application that predicts residential propert
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 HousePricePrediction/
@@ -107,7 +107,7 @@ HousePricePrediction/
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **House Price Prediction** by **Juhi Bhojani** — available on Kaggle.
 
@@ -136,7 +136,7 @@ The dataset contains ~176,000 residential property listings across 81 Indian cit
 
 ---
 
-## 🚀 Running the Backend
+## Running the Backend
 
 ### Prerequisites
 
@@ -172,7 +172,7 @@ Interactive Swagger docs: **http://localhost:8000/docs**
 
 ---
 
-## 💻 Running the Frontend
+## Running the Frontend
 
 ### Prerequisites
 
@@ -195,11 +195,11 @@ npm run dev
 
 The app will be available at **http://localhost:5173**
 
-> ⚠️ **Start the backend first** — the frontend fetches the locations list on page load and calls `/predict` on form submit.
+> **Start the backend first** — the frontend fetches the locations list on page load and calls `/predict` on form submit.
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
 ### Backend — `backend/.env`
 
@@ -218,7 +218,7 @@ The app will be available at **http://localhost:5173**
 
 ---
 
-## 📡 API Reference
+## API Reference
 
 ### `GET /health`
 
@@ -323,7 +323,7 @@ curl -s -X POST http://localhost:8000/predict \
 
 ---
 
-## 📊 Model Performance
+## Model Performance
 
 The final model is a **Random Forest Regressor** wrapped inside a scikit-learn `Pipeline` with a `ColumnTransformer` for preprocessing (one-hot encoding + standard scaling).
 
@@ -349,7 +349,7 @@ Evaluated on a held-out test set (20% of ~176k listings):
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Home — Prediction Form
 
@@ -361,7 +361,7 @@ Evaluated on a held-out test set (20% of ~176k listings):
 
 ---
 
-## 📄 License
+## License
 
 This project is for educational purposes.  
 Dataset credit: **Juhi Bhojani** on Kaggle.
