@@ -1,0 +1,15 @@
+# Core ML / data stack — pinned to notebook versions (Python 3.11.9)
+scikit-learn==1.9.0
+pandas==3.0.5
+numpy==2.4.6
+joblib==1.5.3
+
+# FastAPI ecosystem
+fastapi==0.116.1
+uvicorn[standard]==0.35.0
+pydantic==2.11.7
+pydantic-settings==2.10.1
+
+# Testing
+pytest==8.4.1
+httpx==0.28.1

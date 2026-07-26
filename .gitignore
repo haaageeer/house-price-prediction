@@ -1,0 +1,25 @@
+﻿# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+
+# Environment files
+.env
+backend/.env
+frontend/.env
+
+# Model & data (too large for git)
+models/*.pkl
+notebooks/data/*.csv
+
+# IDE
+.vscode/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
